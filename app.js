@@ -16,6 +16,9 @@ class Animal {
   get name(){
     return this._name;
   }
+  get species(){
+    return this._species;
+  }
   get age(){
     return this._age;
   }
@@ -66,10 +69,24 @@ class Elephant extends Animal {
 }
 
 
+const myMonkey = new Monkey('Nick', true);
+
+myMonkey._species = 'Mammal';
+myMonkey._age = 25;
+myMonkey._hobby = 'Watch tv';
+myMonkey._superpower = 'Tail punch';
+
+console.log(myMonkey.name);
+console.log(myMonkey.species);
+console.log(myMonkey.age);
+console.log(myMonkey.hobby);
+console.log(myMonkey.superpower);
+
+
 
 const myElephant = new Elephant('Johnny', true, true);
 
-myElephant.species = 'Mammal';
+myElephant._species = 'Mammal';
 myElephant._age = '60';
 myElephant._hobby = 'Chillax in the sofa';
 myElephant._superpower = "Universal memory";
