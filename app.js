@@ -65,6 +65,19 @@ class Elephant extends Animal {
   }
 }
 
+
+
 const myElephant = new Elephant('Johnny', true, true);
 
+myElephant.species = 'Mammal';
+myElephant._age = '60';
+myElephant._hobby = 'Chillax in the sofa';
+myElephant._superpower = "Universal memory";
+
 console.log(myElephant.name);
+console.log(myElephant.tail);
+console.log(myElephant.trunk);
+console.log(myElephant.species);
+console.log(myElephant.age);
+console.log(myElephant.hobby);
+console.log(myElephant.superpower);
