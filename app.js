@@ -1,6 +1,40 @@
+// ANIMAL SELECTORS
+
+const tiger = document.querySelector('.tiger');
+
+const tigerFeatures = document.querySelector('.tiger-features');
+
+const monkey = document.querySelector('.monkey');
+
+const monkeyFeatures = document.querySelector('.monkey-features');
+
+const elephant = document.querySelector('.elephant');
+
+const elephantFeatures = document.querySelector('.elephant-features');
 
 
+// MAKING FEATURES INVISIBLE
 
+tigerFeatures.style.display = 'none';
+
+monkeyFeatures.style.display = 'none';
+
+elephantFeatures.style.display = 'none';
+
+
+// ADDING EVENT LISTENERS THAT MAKE THE FEATURES VISIBLE AGAIN
+
+tiger.addEventListener('click', () => {
+tigerFeatures.style.display = "flex";
+})
+
+monkey.addEventListener('click', () => {
+monkeyFeatures.style.display = "flex";
+})
+
+elephant.addEventListener('click', () => {
+elephantFeatures.style.display = "flex";
+})
 
 
 // CLASSES
@@ -69,18 +103,20 @@ class Elephant extends Animal {
 }
 
 
+const myTiger = new Tiger ('Diego', 10, true);
+
+myTiger._species = 'Mammal';
+myTiger._age = 30;
+myTiger._hobby = "Being moody";
+myTiger._superpower = "Magnum gaze";
+
+
 const myMonkey = new Monkey('Nick', true);
 
 myMonkey._species = 'Mammal';
 myMonkey._age = 25;
 myMonkey._hobby = 'Watch tv';
 myMonkey._superpower = 'Tail punch';
-
-console.log(myMonkey.name);
-console.log(myMonkey.species);
-console.log(myMonkey.age);
-console.log(myMonkey.hobby);
-console.log(myMonkey.superpower);
 
 
 
@@ -90,11 +126,3 @@ myElephant._species = 'Mammal';
 myElephant._age = '60';
 myElephant._hobby = 'Chillax in the sofa';
 myElephant._superpower = "Universal memory";
-
-console.log(myElephant.name);
-console.log(myElephant.tail);
-console.log(myElephant.trunk);
-console.log(myElephant.species);
-console.log(myElephant.age);
-console.log(myElephant.hobby);
-console.log(myElephant.superpower);
