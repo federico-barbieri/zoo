@@ -64,3 +64,75 @@ color: #716F81;
 .elephant:hover{
   cursor: pointer;
 }
+
+/* TIGER GROUP */
+
+.tiger-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tiger-features{
+  flex-direction: column;
+  display: inline-flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top:  2rem;
+}
+
+.tiger-feature-s{
+  background-color: #B42B51;
+  color: white;
+  display: inline;
+}
+
+/* MONKEY GROUP */
+
+.monkey-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monkey-features{
+  flex-direction: column;
+  display: inline-flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top:  2rem;
+}
+
+.monkey-feature-s{
+  background-color: #B42B51;
+  color: white;
+  display: inline;
+}
+
+/* ELEPHANT GROUP */
+
+.elephant-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.elephant-features{
+  flex-direction: column;
+  display: inline-flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top:  2rem;
+}
+
+.elephant-feature-s{
+  background-color: #B42B51;
+  color: white;
+  display: inline;
+}
