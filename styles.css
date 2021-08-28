@@ -23,9 +23,44 @@ html{
 .welcome-title{
   font-size: 5rem;
   text-align: center;
+  margin: 10rem auto 1rem auto;
 }
 
 .pick-title{
   font-size: 2rem;
   text-align: center;
+}
+
+.animals{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem auto 2rem auto;
+  font-size: 1.5rem;
+}
+
+.tiger{
+  color: #FB9300;
+}
+
+.tiger:hover{
+  cursor: pointer;
+}
+
+.monkey{
+color: #753422;
+}
+
+.monkey:hover{
+  cursor: pointer;
+}
+
+.elephant{
+color: #716F81;
+}
+
+.elephant:hover{
+  cursor: pointer;
 }
