@@ -45,7 +45,10 @@ html{
 }
 
 .tiger{
-  color: #FB9300;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(7px 7px 5px);
 }
 
 .tiger:hover{
@@ -53,7 +56,10 @@ html{
 }
 
 .monkey{
-color: #753422;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(7px 7px 5px);
 }
 
 .monkey:hover{
@@ -61,7 +67,10 @@ color: #753422;
 }
 
 .elephant{
-color: #716F81;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(7px 7px 5px);
 }
 
 .elephant:hover{
