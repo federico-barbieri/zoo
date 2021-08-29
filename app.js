@@ -12,8 +12,23 @@ const elephant = document.querySelector('.elephant');
 
 const elephantFeatures = document.querySelector('.elephant-features');
 
+// ATTRIBUTES SELECTOR
+const attribute = document.querySelector('.attr');
 
-// MAKING FEATURES INVISIBLE
+const tigerName = document.querySelector('.tiger-name');
+const tigerHobby = document.querySelector('.tiger-hobby');
+const tigerSuperpower = document.querySelector('.tiger-superpower');
+
+const monkeyName = document.querySelector('.monkey-name');
+const monkeyHobby = document.querySelector('.monkey-hobby');
+const monkeySuperpower = document.querySelector('.monkey-superpower');
+
+const elephantName = document.querySelector('.elephant-name');
+const elephantHobby = document.querySelector('.elephant-hobby');
+const elephantSuperpower = document.querySelector('.elephant-superpower');
+
+
+// MAKING ALL FEATURES INVISIBLE
 
 tigerFeatures.style.display = 'none';
 
@@ -36,6 +51,56 @@ elephant.addEventListener('click', () => {
 elephantFeatures.style.display = "flex";
 })
 
+
+// REVEALING THE INFORMATION OF EACH ANIMAL ATTRIBUTE
+
+// tiger attributes
+tigerName.addEventListener('click', () => {
+  tigerName.innerHTML = myTiger.name;
+  tigerName.style.cursor = "default";
+})
+
+tigerHobby.addEventListener('click', () =>{
+  tigerHobby.innerHTML = myTiger.hobby;
+  tigerHobby.style.cursor = 'default';
+})
+
+tigerSuperpower.addEventListener('click', () =>{
+  tigerSuperpower.innerHTML = myTiger.superpower;
+  tigerSuperpower.style.cursor = 'default';
+})
+
+// monkey attributes
+monkeyName.addEventListener('click', () => {
+  monkeyName.innerHTML = myMonkey.name;
+  monkeyName.style.cursor = 'default';
+})
+
+monkeyHobby.addEventListener('click', () => {
+  monkeyHobby.innerHTML = myMonkey.hobby;
+  monkeyHobby.style.cursor = 'default';
+})
+
+monkeySuperpower.addEventListener('click', () => {
+  monkeySuperpower.innerHTML = myMonkey.superpower;
+  monkeySuperpower.style.cursor = 'default';
+})
+
+// elephant attributes
+elephantName.addEventListener('click', () =>{
+  elephantName.innerHTML = myElephant.name;
+  elephantName.cursor = 'default';
+})
+
+elephantHobby.addEventListener('click', () =>{
+  elephantHobby.innerHTML = myElephant.hobby;
+  elephantHobby.cursor = 'default';
+})
+
+elephantSuperpower.addEventListener('click', () =>{
+  elephantSuperpower.innerHTML = myElephant.superpower;
+  elephantSuperpower.cursor = 'default';
+})
 
 // CLASSES
 
