@@ -9,11 +9,14 @@ html{
 
 #container{
   width: 100%;
-  height: 30rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('img/zoo-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-screen{
@@ -23,7 +26,7 @@ html{
 .welcome-title{
   font-size: 5rem;
   text-align: center;
-  margin: 10rem auto 1rem auto;
+  margin: 5rem auto 1rem auto;
 }
 
 .pick-title{
@@ -84,8 +87,8 @@ color: #716F81;
 }
 
 .tiger-feature-s{
-  background-color: #B42B51;
-  color: white;
+  background-color: white;
+  color: #B42B51;
   display: inline;
 }
 
@@ -108,8 +111,8 @@ color: #716F81;
 }
 
 .monkey-feature-s{
-  background-color: #B42B51;
-  color: white;
+  background-color: white;
+  color: #B42B51;
   display: inline;
 }
 
@@ -132,7 +135,15 @@ color: #716F81;
 }
 
 .elephant-feature-s{
+  background-color: white;
+  color: #B42B51;
+  display: inline;
+}
+
+/* MAKING THE ATTRIBUTES OF EACH ANIMAL BE CLICKABLE */
+
+.attr:hover{
+  cursor: pointer;
   background-color: #B42B51;
   color: white;
-  display: inline;
 }
