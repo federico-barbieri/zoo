@@ -1,3 +1,10 @@
+// TEXT SELECTORS
+
+const welcome = document.querySelector('.welcome-title');
+
+const magic = document.querySelector('.magic');
+
+
 // ANIMAL SELECTORS
 
 const tiger = document.querySelector('.tiger');
@@ -26,6 +33,25 @@ const monkeySuperpower = document.querySelector('.monkey-superpower');
 const elephantName = document.querySelector('.elephant-name');
 const elephantHobby = document.querySelector('.elephant-hobby');
 const elephantSuperpower = document.querySelector('.elephant-superpower');
+
+//
+//
+//
+
+// RANDOM GENERATOR OF COLORS FOR THE MAIN TITLE
+
+function randomColor () {
+let randomNum1 = Math.floor(Math.random()*255);
+let randomNum2 = Math.floor(Math.random()*255);
+let randomNum3 = Math.floor(Math.random()*255);
+
+let randomColor = (`rgb(${randomNum1}` + `, ` + `${randomNum2}, ` + `${randomNum3})`);
+return randomColor;
+}
+
+welcome.addEventListener('mouseover', () =>{
+  magic.style.color = randomColor();
+})
 
 
 // MAKING ALL FEATURES INVISIBLE
