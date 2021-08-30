@@ -94,24 +94,27 @@ html{
 
 .tiger-group{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  height: 10rem;
 }
 
 .tiger-features{
   flex-direction: column;
   display: inline-flex;
-  height: 7rem;
+  height: 10rem;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top:  2rem;
+
+
 }
 
 .tiger-feature-s{
   background-color: white;
   color: #B42B51;
   display: inline;
+  padding: 0 1rem 0 1rem;
 }
 
 /* MONKEY GROUP */
