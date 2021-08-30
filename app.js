@@ -9,6 +9,8 @@ const magic = document.querySelector('.magic');
 
 const tiger = document.querySelector('.tiger');
 
+const tigerGroup = document.querySelector('.tiger-group');
+
 const tigerFeatures = document.querySelector('.tiger-features');
 
 const monkey = document.querySelector('.monkey');
@@ -67,6 +69,12 @@ elephantFeatures.style.display = 'none';
 
 tiger.addEventListener('click', () => {
 tigerFeatures.style.display = "flex";
+tigerGroup.style.flexDirection = 'row';
+tigerGroup.style.width = '25rem';
+tigerGroup.style.justifyContent = 'space-between';
+tigerGroup.style.alignItems = 'center';
+monkey.style.display = 'none';
+elephant.style.display = 'none';
 })
 
 monkey.addEventListener('click', () => {
@@ -128,7 +136,7 @@ elephantSuperpower.addEventListener('click', () =>{
   elephantSuperpower.cursor = 'default';
 })
 
-// CLASSES
+// CLASSES, BEAUTIFUL CLASSES
 
 class Animal {
   constructor(name, species, age, hobby, superpower){
