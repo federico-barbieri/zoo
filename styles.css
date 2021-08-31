@@ -203,21 +203,45 @@ html{
 
 @media only screen and (max-width: 1130px){
   #container{
-    height: 80rem;
+    height: 100rem;
+  }
+  .main-screen{
+    max-width: 90%;
   }
   .welcome-title{
     font-size: 4rem;
     text-align: center;
-    margin: 5rem auto 1.5rem auto;
+    margin: 0 auto 1rem auto;
+    transform: translateY(-10rem);
+  }
+  .pick-title{
+    margin-top: -8rem;
   }
   .animals{
     flex-direction: column;
-    height: 40rem;
-    margin: 7rem auto 0 auto;
+    height: 60rem;
+    margin: 3rem auto 0 auto;
     justify-content: space-around;
   }
   .try-again-btn{
     margin-top: -5rem;
   }
-  
+  .tiger{
+    transform: scale(1.5);
+  }
+  .tigerFeature-s{
+    font-size: 2;
+  }
+  .monkey{
+    transform: scale(1.5);
+  }
+  .monkeyFeature-s{
+    font-size: 2;
+  }
+  .elephant{
+    transform: scale(1.5);
+  }
+  .elephantFeature-s{
+    font-size: 2;
+  }
 }
