@@ -225,6 +225,7 @@ html{
   }
   .try-again-btn{
     margin-top: -5rem;
+    transform: scale(3);
   }
   .tiger{
     transform: scale(1.5);
