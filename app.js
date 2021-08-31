@@ -7,6 +7,8 @@ const magic = document.querySelector('.magic');
 
 // ANIMAL SELECTORS
 
+const animals = document.querySelector('.animals');
+
 const tiger = document.querySelector('.tiger');
 
 const tigerGroup = document.querySelector('.tiger-group');
@@ -15,9 +17,13 @@ const tigerFeatures = document.querySelector('.tiger-features');
 
 const monkey = document.querySelector('.monkey');
 
+const monkeyGroup = document.querySelector('.monkey-group');
+
 const monkeyFeatures = document.querySelector('.monkey-features');
 
 const elephant = document.querySelector('.elephant');
+
+const elephantGroup = document.querySelector('.elephant-group');
 
 const elephantFeatures = document.querySelector('.elephant-features');
 
@@ -36,6 +42,8 @@ const elephantName = document.querySelector('.elephant-name');
 const elephantHobby = document.querySelector('.elephant-hobby');
 const elephantSuperpower = document.querySelector('.elephant-superpower');
 
+// TRY AGAIN BUTTON SELECTOR
+const tryAgainBtn = document.querySelector('.try-again-btn');
 //
 //
 //
@@ -71,18 +79,43 @@ tiger.addEventListener('click', () => {
 tigerFeatures.style.display = "flex";
 tigerGroup.style.flexDirection = 'row';
 tigerGroup.style.width = '25rem';
-tigerGroup.style.justifyContent = 'space-between';
 tigerGroup.style.alignItems = 'center';
+tigerGroup.style.alignSelf = 'center';
+tigerGroup.style.justifyContent = 'space-between';
+tigerGroup.style.margin = '0 auto 0 auto';
 monkey.style.display = 'none';
+monkeyGroup.style.display = 'none';
 elephant.style.display = 'none';
+elephantGroup.style.display = 'none';
+tryAgainBtn.style.display = 'inline';
 })
 
 monkey.addEventListener('click', () => {
 monkeyFeatures.style.display = "flex";
+monkeyGroup.style.flexDirection = 'row';
+monkeyGroup.style.width = '25rem';
+monkeyGroup.style.justifyContent = 'space-between';
+monkeyGroup.style.alignItems = 'center';
+monkeyGroup.style.margin = '0 auto 0 auto';
+tiger.style.display = 'none';
+elephant.style.display = 'none';
+tigerGroup.style.display = 'none';
+elephantGroup.style.display = 'none';
+tryAgainBtn.style.display = 'inline';
 })
 
 elephant.addEventListener('click', () => {
 elephantFeatures.style.display = "flex";
+elephantGroup.style.flexDirection = 'row';
+elephantGroup.style.width = '25rem';
+elephantGroup.style.justifyContent = 'space-between';
+elephantGroup.style.alignItems = 'center';
+elephantGroup.style.margin = '0 auto 0 auto';
+tiger.style.display = 'none';
+monkey.style.display = 'none';
+tigerGroup.style.display = 'none';
+monkeyGroup.style.display = 'none';
+tryAgainBtn.style.display = 'inline';
 })
 
 
@@ -135,6 +168,38 @@ elephantSuperpower.addEventListener('click', () =>{
   elephantSuperpower.innerHTML = myElephant.superpower;
   elephantSuperpower.cursor = 'default';
 })
+
+
+// TRY AGAIN BUTTON EVENT LISTENER
+
+tryAgainBtn.addEventListener('click', () => {
+  tigerFeatures.style.display = 'inline-flex';
+  tigerFeatures.style.display = 'none';
+  monkeyFeatures.style.display = 'inline-flex';
+  monkeyFeatures.style.display = 'none';
+  elephantFeatures.style.display = 'inline-flex';
+  elephantFeatures.style.display = 'none';
+  tiger.style.display = 'inline';
+  monkey.style.display = 'inline';
+  elephant.style.display = 'inline';
+  animals.style.display = 'none';
+  animals.style.display = 'flex';
+  animals.style.justifyContent = 'space-around';
+  animals.style.alignItems = 'center';
+  tigerGroup.style.display = 'flex';
+  tigerGroup.style.flexDirection = 'column';
+  tigerGroup.style.width = '10rem';
+  tigerGroup.style.margin = '0 0 0 0';
+  monkeyGroup.style.display = 'flex';
+  monkeyGroup.style.flexDirection = 'column';
+  monkeyGroup.style.width = '10rem';
+  monkeyGroup.style.margin = '0 0 0 0';
+  elephantGroup.style.display = 'flex';
+  elephantGroup.style.flexDirection = 'column';
+  elephantGroup.style.width = '10rem';
+  elephantGroup.style.margin = '0 0 0 0';
+})
+
 
 // CLASSES, BEAUTIFUL CLASSES
 
@@ -217,11 +282,9 @@ myMonkey._age = 25;
 myMonkey._hobby = 'Watch tv';
 myMonkey._superpower = 'Tail punch';
 
-
-
 const myElephant = new Elephant('Johnny', true, true);
 
 myElephant._species = 'Mammal';
 myElephant._age = '60';
-myElephant._hobby = 'Chillax in the sofa';
-myElephant._superpower = "Universal memory";
+myElephant._hobby = 'Chillax';
+myElephant._superpower = "Memory";
