@@ -77,6 +77,8 @@ elephantFeatures.style.display = 'none';
 // ADDING EVENT LISTENERS THAT MAKE THE FEATURES VISIBLE AGAIN
 
 tiger.addEventListener('click', () => {
+tiger.style.border = 'none';
+tiger.style.cursor = 'default';
 tigerFeatures.style.display = "flex";
 tigerGroup.style.flexDirection = 'row';
 tigerGroup.style.width = '25rem';
@@ -93,6 +95,8 @@ tryAgainBtn.style.display = 'inline';
 
 
 monkey.addEventListener('click', () => {
+monkey.style.border = 'none';
+monkey.style.cursor = 'default';
 monkeyFeatures.style.display = "flex";
 monkeyGroup.style.flexDirection = 'row';
 monkeyGroup.style.width = '25rem';
@@ -107,6 +111,8 @@ tryAgainBtn.style.display = 'inline';
 })
 
 elephant.addEventListener('click', () => {
+elephant.style.border = 'none';
+elephant.style.cursor = 'default';
 elephantFeatures.style.display = "flex";
 elephantGroup.style.flexDirection = 'row';
 elephantGroup.style.width = '25rem';
@@ -175,6 +181,12 @@ elephantSuperpower.addEventListener('click', () =>{
 // TRY AGAIN BUTTON EVENT LISTENER
 
 tryAgainBtn.addEventListener('click', () => {
+  tiger.style.border = '2px solid white';
+  tiger.style.cursor = 'pointer';
+  monkey.style.border = '2px solid white';
+  monkey.style.cursor = 'pointer';
+  elephant.style.border = '2px solid white';
+  elephant.style.cursor = 'pointer';
   tigerFeatures.style.display = 'inline-flex';
   tigerFeatures.style.display = 'none';
   monkeyFeatures.style.display = 'inline-flex';
