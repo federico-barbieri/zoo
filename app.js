@@ -1,3 +1,4 @@
+
 // TEXT SELECTORS
 
 const welcome = document.querySelector('.welcome-title');
@@ -89,6 +90,7 @@ elephant.style.display = 'none';
 elephantGroup.style.display = 'none';
 tryAgainBtn.style.display = 'inline';
 })
+
 
 monkey.addEventListener('click', () => {
 monkeyFeatures.style.display = "flex";
@@ -198,8 +200,8 @@ tryAgainBtn.addEventListener('click', () => {
   elephantGroup.style.flexDirection = 'column';
   elephantGroup.style.width = '10rem';
   elephantGroup.style.margin = '0 0 0 0';
+  tryAgainBtn.style.display = 'none';
 })
-
 
 // CLASSES, BEAUTIFUL CLASSES
 
