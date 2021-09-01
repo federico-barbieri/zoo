@@ -280,6 +280,20 @@ class Elephant extends Animal {
   }
 }
 
+class Snake extends Animal {
+  constructor (name, legs, languages){
+    super(name);
+    this._legs = legs;
+    this._languages = languages;
+  }
+  get legs(){
+    return this._legs;
+  }
+  get languages(){
+    return this._languages;
+  }
+}
+
 
 const myTiger = new Tiger ('Diego', 10, true);
 
@@ -302,3 +316,8 @@ myElephant._species = 'Mammal';
 myElephant._age = '60';
 myElephant._hobby = 'Chillax';
 myElephant._superpower = "Memory";
+
+const mySnake = new Snake('Tim', 0, 'Portuguese');
+
+mySnake._age = 15;
+mySnake._superpower = 'Spearhead';
